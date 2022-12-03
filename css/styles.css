@@ -9,6 +9,7 @@
     --background-adress-color: rgba(255, 255, 255, 0.6);
     --background-picture: #C4C4C4;
     --primary-icom-color: rgba(175, 177, 184, 1);
+    --icons-color: #AFB1B8;
 
 }
 
@@ -321,14 +322,7 @@ header {
     line-height: 1.71;
 }
 
-.feature-items::before {
-    content: "";
-    display: block;
-    height: 80px;
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-}
+
 
 
 /*----------ACTIVITY----------*/
@@ -399,7 +393,7 @@ header {
     display: inline-block;
     padding: 12px;
     border-radius: 50%;
-    color: var(--primary-text-color);
+    color: var(--icons-color);
 }
 
 .team-link:hover,
@@ -430,10 +424,10 @@ header {
     padding: 16px 32px;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
+    border: 1px solid var(--icons-color);
     border-radius: 4px;
 
-    color: var(--primary-text-color);  
+    color: var(--icons-color);  
 }
 
 .klient-icon {
@@ -536,7 +530,6 @@ header {
 
     background: rgba(255, 255, 255, 0.1);
     color: var(--primary-white-color);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25)
 }
 
 .media-link:hover,
@@ -568,14 +561,16 @@ header {
 
 .portfolio{
     display: flex;
-    justify-content: center;
     flex-wrap: wrap;
 }
 
 
 .portfolio-menu {
+    padding-left: 24px;
+
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
+    
     border-top: 0;
 }
 
@@ -584,12 +579,16 @@ header {
     margin-bottom: 20px;
     margin-right: 20px;
 
-    text-align: center;
     width: 370px;
 }
 
-.portfolio-section:hover {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+.portfolio-link {
+    display: block;
+}
+
+.portfolio-link:hover {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
+    0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .portfolio-section:nth-child(3n) {
